@@ -5,7 +5,7 @@ import axios from 'axios';
 // then() and catch() are 2 important methods of Promise class
 // then() and catch() are "chainable" as they return Promise objects as well
 // GET request
-axios.get( `https://workshops-server.herokuapp.com/workshops` )
+axios.get( `http://workshops-server.herokuapp.com/workshops` )
     .then(response => {
         const { data } = response;
         console.log( data );
