@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        <a href="https://reactjs.org" title="React website">
+            React JS is from <span>Facebook</span>
+        </a>
+    -->
+    <div id="root"></div>
+
+    <!-- react core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.0.0-rc.0-next-fe905f152-20220107/umd/react.development.js"></script>
+    
+    <!-- react ui definition (react element) - renders the UI in the browser -->
+    <!-- constructs the DOM -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.0.0-rc.0-next-fe905f152-20220107/umd/react-dom.development.min.js"></script>
+
+    <!-- babel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+    <script type="text/babel">
+        // JSX
+        const linkEl = <a href="https://reactjs.org" title="React website">
+            React JS is from <span>Facebook</span>
+        </a>;
+
+        ReactDOM.render( linkEl, document.getElementById( 'root' ) );
+    </script>
+</body>
+</html>

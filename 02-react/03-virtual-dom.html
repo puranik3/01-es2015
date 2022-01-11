@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- react core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.0.0-rc.0-next-fe905f152-20220107/umd/react.development.js"></script>
+    
+    <!-- react ui definition (react element) - renders the UI in the browser -->
+    <!-- constructs the DOM -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.0.0-rc.0-next-fe905f152-20220107/umd/react-dom.development.min.js"></script>
+
+    <!-- babel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+
+    <script type="text/babel">
+        const el1 = (
+            <form action="/auth/register" method="post">
+                <label htmlFor="username">Username</label>
+                <input type="text" id="username" name="username" />
+                
+                <label htmlFor="password">Password</label>
+                <input type="password" id="password" name="password" />
+                
+                <label htmlFor="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" />
+
+                <input type="submit" value="Register" key="submit-button" />
+
+                <div>
+                    sdbksbjd
+                </div>
+            </form>
+        );
+
+        ReactDOM.render( el1, document.getElementById( 'root' ) );
+
+        setTimeout(() => {
+            // Reused: form, 
+            const el2 = (
+                <form action="/auth/login" method="post">
+                    <label htmlFor="username">Username</label>
+                    <input type="text" id="username" name="username" />
+                    
+                    <label htmlFor="password">Password</label>
+                    <input type="password" id="password" name="password" />
+
+                    <input type="submit" value="Login" key="submit-button" />
+
+                    <section>
+                        sdbksbjd
+                    </section>
+                </form>
+            );
+
+            ReactDOM.render( el2, document.getElementById( 'root' ) );
+        }, 15000);
+
+    </script>
+</body>
+</html>
